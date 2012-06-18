@@ -25,17 +25,33 @@ int main()
 	felica *f;
 	char s[256];
 
+	printf("%s\n", "************************************************");
+	printf("%s\n", "***                                          ***");
+	printf("%s\n", "***  Felica number reader for TECH-MEET      ***");
+	printf("%s\n", "***                          Version 1.0     ***");
+	printf("%s\n", "***                                          ***");
+	printf("%s\n", "***  Plug your felica card reader to the PC  ***");
+	printf("%s\n", "***  Touch the felica card to the reader     ***");	
+	printf("%s\n", "***  Felica number will be read and logged   ***");
+	printf("%s\n", "***                                          ***");
+	printf("%s\n", "*** - Ctrl + C ------- exit this program     ***");
+	printf("%s\n", "***                                          ***");
+	printf("%s\n", "***      implemeneted by Ryusaburo Tanaka    ***");
+	printf("%s\n", "************************************************");
+	printf("\n");
+
 	if ((fp = fopen(OUTPUT_FILE, "a")) == NULL) {
 		printf("file open error!!\n");
 		exit(0);
 	}
-	printf("%s\n", "##############################################");
-    printf("##   %s%s   ##\n", "Output file name is ", OUTPUT_FILE);
-	printf("%s\n", "##############################################");
+
+	printf("%s\n", "################################################");
+    printf("##    %s%s    ##\n", "Output file name is ", OUTPUT_FILE);
+	printf("%s\n", "################################################");
     
-	fprintf(fp, "%s\n", "##############################################");
-    fprintf(fp, "##   %s%s   ##\n", "Output file name is ", OUTPUT_FILE);
-	fprintf(fp, "%s\n", "##############################################");
+	fprintf(fp, "%s\n", "################################################");
+    fprintf(fp, "##    %s%s    ##\n", "Output file name is ", OUTPUT_FILE);
+	fprintf(fp, "%s\n", "################################################");
 
     fclose(fp);
 
